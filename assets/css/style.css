@@ -1,0 +1,41 @@
+/* Estilos da página index.html */
+.center{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bgPlumTextWhite{
+    background-color:plum;
+    color: white;
+    font-family: garamond;
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: rgb(255, 158, 242);
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.contatoinfo{
+    color: white;
+    font-family: garamond;
+    font-size: 130%;
+}
