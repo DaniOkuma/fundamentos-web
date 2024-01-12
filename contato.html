@@ -29,42 +29,49 @@
     <h1 class="center contatoinfo" style="font-size:300%;">
         Entre em contato comigo! &hearts;</h1>
 
-    <div class="center">
+    <div class="center contatoinfo">
         <img class="br-50" src="assets/img/kawaii-girl.jpg" alt="foto de uma garota" width="300" height="300">
         <br>
         <br>
         <form>
-            <b> <label class="contatoinfo" for="Nome">Nome:</label> </b>
+            <b> <label for="nome">Nome:</label> </b> <br>
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id='txtNome'> </div>
             <br>
-            <input type="text" id="nome">
+            <b> <label for="email">E-mail:</label> </b> <br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id='txtEmail'> </div>
             <br>
+            <b> <label for="assunto">Assunto:</label> </b> <br>
+            <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id='txtAssunto'> </div>
             <br>
-            <b> <label class="contatoinfo" for="email">E-mail:</label> </b>
-            <br>
-            <input type="email" id="email">
-            <br>
-            <br>
-            <b> <label class="contatoinfo" for="assunto">Assunto:</label> </b>
-            <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-            <br>
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </form>
 
-        <h2 class="contatoinfo"> Endereço:
-            <br>
+        <h2 class="contatoinfo"> Endereço: </h2>
+        <div>
             Av. Paulista,
             1000 -
             São Paulo - SP
             CEP 01310-100
-
-        </h2>
+        </div>
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0980318204333!2d-46.6519376!3d-23.5649224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1704747219306!5m2!1spt-BR!2sbr"
             width="600" height="350 
-    style=" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    style=" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
     </div>
+
+    <footer>
+        <p class="contatoinfo center">
+            Todos os direitos reservados: Danielle Okuma
+        </p>
+
+    </footer>
+    <script src="./assets/js/script.js">
+
+    </script>
 
 </body>
 
